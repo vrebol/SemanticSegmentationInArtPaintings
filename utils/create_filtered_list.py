@@ -4,6 +4,7 @@ import scipy.io
 import numpy as np
 
 dataset_path = '/kaggle/input/art-seg/data/pascal_sbd'
+out_path = '/kaggle/output/'
 images_path = os.path.join(dataset_path, 'images/')
 labels_path = os.path.join(dataset_path, 'labels/')
 splits = ['train', 'val']
@@ -15,8 +16,8 @@ for split in splits:
     with open(os.path.join(dataset_path, split + '_label.txt'), mode='r') as f:
         labels = f.read().splitlines()
 
-    images_file = open(os.path.join(dataset_path, split + '_filtered12.txt'), mode='w')
-    labels_file = open(os.path.join(dataset_path, split + '_filtered12_label.txt'), mode='w')
+    images_file = open(os.path.join(out_path, split + '_filtered12.txt'), mode='w')
+    labels_file = open(os.path.join(out_path, split + '_filtered12_label.txt'), mode='w')
 
     for image_name, label_name in zip(images, labels):
         if label_name[-3:] == 'png':
