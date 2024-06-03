@@ -4,7 +4,7 @@ import scipy.io
 import numpy as np
 
 dataset_path = '/kaggle/input/art-seg/data/pascal_sbd'
-out_path = '/kaggle/output/'
+out_path = '/kaggle/working/'
 images_path = os.path.join(dataset_path, 'images/')
 labels_path = os.path.join(dataset_path, 'labels/')
 splits = ['train', 'val']
