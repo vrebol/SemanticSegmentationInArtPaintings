@@ -1,7 +1,7 @@
 import os
 from shutil import copyfile
 
-source_path = '../data/DRAM_500/'
+source_path = '/kaggle/input/art-seg/data/DRAM_500/'
 target_path = '/kaggle/working/DRAM_for_Adain'
 os.makedirs(target_path, exist_ok=True)
 relevant_sets = ['realism', 'impressionism', 'post_impressionism', 'expressionism']
