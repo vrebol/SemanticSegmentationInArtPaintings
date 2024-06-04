@@ -3,7 +3,7 @@ import os
 from shutil import copyfile, move
 
 DATA_DIR = '/kaggle/working'
-PASCAL_SBD_DIR = '../data/pascal_sbd_new'
+PASCAL_SBD_DIR = '/kaggle/input/art-seg/data/data/pascal_sbd'
 TRAIN_IM_LIST_FILE = 'train_filtered12.txt'
 TRAIN_LBL_LIST_FILE = 'train_filtered12_label.txt'
 RELEVANT_MOVEMENTS = ['realism', 'impressionism', 'post_impressionism', 'expressionism']
