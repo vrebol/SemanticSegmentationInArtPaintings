@@ -2,10 +2,10 @@
 import os
 from shutil import copyfile, move
 
-DATA_DIR = '../data'
+DATA_DIR = '/kaggle/working'
 PASCAL_SBD_DIR = '../data/pascal_sbd_new'
-TRAIN_IM_LIST_FILE = 'train_filtered12.txt'
-TRAIN_LBL_LIST_FILE = 'train_filtered12_label.txt'
+TRAIN_IM_LIST_FILE = '/kaggle/working/train_filtered12.txt'
+TRAIN_LBL_LIST_FILE = '/kaggle/working/train_filtered12_label.txt'
 RELEVANT_MOVEMENTS = ['realism', 'impressionism', 'post_impressionism', 'expressionism']
 
 for movement in RELEVANT_MOVEMENTS:
