@@ -20,7 +20,7 @@ for movement in RELEVANT_MOVEMENTS:
     f_im = open(os.path.join(new_path, TRAIN_IM_LIST_FILE), mode='w')
     f_lbl = open(os.path.join(new_path, TRAIN_LBL_LIST_FILE), mode='w')
 
-    with open(os.path.join(PASCAL_SBD_DIR, TRAIN_IM_LIST_FILE), mode='r') as f:
+    with open(os.path.join(DATA_DIR, TRAIN_IM_LIST_FILE), mode='r') as f:
         image_files = f.read().splitlines()
 
     count = 0
